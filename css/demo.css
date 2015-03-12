@@ -1,0 +1,52 @@
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea.scroll {
+    overflow-y: scroll;
+}
+
+.rtl .jquery-placeholder-text {
+    direction: rtl;
+}
+
+.rtl textarea {
+    direction: rtl;
+}
+
+.jquery-placeholder-text {
+    color: #aaa;
+    -moz-transition: color, margin-left 0.15s ease-in;
+    -webkit-transition: color, margin-left 0.15s ease-in;
+    -o-transition: color, margin-left 0.15s ease-in;
+    transition: color, margin-left 0.15s ease-in;
+}
+
+.jquery-placeholder-text.jquery-placeholder-text-focused {
+    color: #ddd;
+}
+
+.elaborate-animation .jquery-placeholder-text {
+    margin-left: 0px;
+}
+
+.elaborate-animation .jquery-placeholder-text.jquery-placeholder-text-focused {
+    margin-left: 100px;
+    font-style: italic;
+}
+
+.input-placeholders .jquery-placeholder-text {
+    color: #000;
+}
+
+.input-placeholders .jquery-placeholder-text.jquery-placeholder-text-focused {
+    color: #999;
+}
+.code-box{
+    margin-bottom: 5px;
+}

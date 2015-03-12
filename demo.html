@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="./css/demo.css" rel="stylesheet">    
+    <style type="text/css">
+
+        body {
+            padding-top: 15px;
+        }
+        pre {
+            padding: 8px;
+            background-color: #F7F7F9;
+            border: 1px solid #E1E1E8;
+            margin-top: 0px;
+            margin-bottom: 18px;
+        }
+        
+        .hilite {
+            color: #FF8C00;
+        }
+                        
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jQuery-placeholder.js"></script>
+
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1>Placeholder demo page</h1>
+                <p>Demo page for placeholder jQuery plugin, includes examples of various ways to use the placeholder component.</p>
+                <p>See <a href="https://github.com/petkaantonov/jQuery-placeholder">project page</a> for documentation.</p>
+            </div>
+        </div>
+
+        <div class="row"><div class="span12"><hr></div></div>
+
+        <div class="row">
+            <div class="span4">
+                <h4>Basic example</h4>
+                <textarea placeholder="Write something here..." class="span3" rows="3"></textarea>
+            </div>
+            <div class="span8">
+                <h4>Markup</h4>
+<pre class="prettyprint">
+&lt;textarea <span class="hilite">placeholder</span>="Write something here..."&gt;&lt;/textarea&gt;
+</pre>
+            </div>
+        </div>
+        
+        <div class="row"><div class="span12"><hr></div></div>
+        
+        <div class="row">
+            <div class="span4">
+                <h4>Hide on focus <small>gets </small></h4>
+                <textarea data-placeholder-hide-on-focus="true" placeholder="Write something here..." class="span3" rows="3"></textarea>
+            </div>
+            <div class="span8"><h4>Markup</h4>
+<pre class="prettyprint">
+&lt;textarea <span class="hilite">data-placeholder-hide-on-focus</span>="true" <span class="hilite">placeholder</span>="Write something here..."&gt;&lt;/textarea&gt;
+</pre>
+            </div>
+        </div>
+        
+        <div class="row"><div class="span12"><hr></div></div>
+ 
+         <div class="row">
+             <div class="span4 elaborate-animation">
+                 <h4>Elaborate animations</h4>
+                 <textarea placeholder="Write something here..." class="span3" rows="3"></textarea>
+             </div>
+             <div class="span8"><h4>Markup+CSS</h4>
+<pre class="prettyprint">
+&lt;textarea <span class="hilite">placeholder</span>="Write something here..."&gt;&lt;/textarea&gt;
+</pre>
+<pre class="prettyprint">
+.elaborate-animation <span class="hilite">.jquery-placeholder-text</span> {
+    margin-left: 0px;
+}
+
+.elaborate-animation <span class="hilite">.jquery-placeholder-text.jquery-placeholder-text-focused</span> {
+    margin-left: 100px;
+    font-style: italic;
+}
+</pre>
+
+             </div>
+        </div>
+        
+        <div class="row"><div class="span12"><hr></div></div>
+        
+        <div class="row">
+            <div class="span4">
+                <h4>Right-to-left</h4>
+                <div class="rtl">
+                    <textarea placeholder="Write something here..." class="span3" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="span8"><h4>Markup+CSS</h4>
+<pre class="prettyprint">
+&lt;textarea <span class="hilite">placeholder</span>="Write something here..."&gt;&lt;/textarea&gt;
+</pre>
+<pre class="prettyprint">
+.rtl <span class="hilite">.jquery-placeholder-text</span> {
+    direction: rtl;
+}
+
+.rtl textarea {
+    direction: rtl;
+}
+</pre>
+            </div>
+        </div>
+        
+        <div class="row"><div class="span12"><hr></div></div>
+
+        <div class="row">
+            <div class="span4">
+                <h4>Z-index robustness</h4>
+                <p>The placeholder texts do not show through the overlay, no matter what - there is 
+                no reliance on some specific z-index value.</p>
+                <a href="#myModal" role="button" class="btn" data-toggle="modal">Click here</a>
+            </div>
+            <div class="span8"><h4>Markup</h4>
+<pre class="prettyprint">
+&lt;textarea <span class="hilite">placeholder</span>="Write something here..."&gt;&lt;/textarea&gt;
+</pre>
+            </div>
+        </div>
+        
+        <div class="row"><div class="span12"><hr></div></div>
+        
+        
+        <div class="row">
+            <div class="span4 input-placeholders">
+                <h4>Various inputs</h4>
+                <input type="email" placeholder="email" class="span3"><br>
+                <input type="password" placeholder="password" class="span3"><br>
+                <input type="tel" placeholder="telephone" class="span3"><br>
+            </div>
+            <div class="span8"><h4>Markup+CSS</h4>
+<pre class="prettyprint">
+&lt;input type=&quot;email&quot; <span class="hilite">placeholder</span>=&quot;email&quot;&gt;
+&lt;input type=&quot;password&quot; <span class="hilite">placeholder</span>=&quot;password&quot;&gt;
+&lt;input type=&quot;tel&quot; <span class="hilite">placeholder</span>=&quot;telephone&quot;&gt;
+</pre>
+<pre class="prettyprint">
+.input-placeholders <span class="hilite">.jquery-placeholder-text</span> {
+    color: #000;
+}
+
+.input-placeholders <span class="hilite">.jquery-placeholder-text.jquery-placeholder-text-focused</span> {
+    color: #999;
+}
+</pre>
+            </div>
+        </div>
+        
+        <div class="row"><div class="span12"><hr></div></div>
+        
+        
+        <div class="row">
+
+            <div class="span4">
+                <h4>Base CSS</h4>
+                <p>The base css that is applied to every placeholder with low specificity.</p>
+            </div>
+            
+            <div class="span8">
+                
+                <pre class="prettyprint css">
+<span class="hilite">.jquery-placeholder-text</span> {
+    color: #aaa;
+    -moz-transition: color, margin-left 0.15s ease-in;
+    -webkit-transition: color, margin-left 0.15s ease-in;
+    -o-transition: color, margin-left 0.15s ease-in;
+    transition: color, margin-left 0.15s ease-in;
+}
+
+<span class="hilite">.jquery-placeholder-text.jquery-placeholder-text-focused</span> {
+    color: #ddd;
+}</pre>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Z-index robustness</h3>
+      </div>
+      <div class="modal-body">
+      <textarea placeholder="Write something here..." class="span3" rows="3"></textarea>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+    
+ </body>
+</html>

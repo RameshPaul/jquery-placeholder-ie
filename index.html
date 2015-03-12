@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jquery placeholder IE fix</title>
+    <link rel=stylesheet href="css/demo.css">
+    <link rel=stylesheet href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!--[if lt IE 10]>
+        <script type="text/javascript" src="js/jQuery-placeholder.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <h2>Placeholder demo page</h2>
+            <h3>Using placeholder exclusively in IE </h3>
+            <p>See <a href="https://github.com/petkaantonov/jQuery-placeholder">project page</a> for documentation.</p>
+            <p><b>Static initialization:-</b> <br>$('input, textarea').placeholder();</p>
+            <p><b>For dynamic initialization follow below steps:-</b>
+                <br>
+                1. Destroy placeholder first using -- $('input, textarea').placeholder("destroy"); <br>
+                2. Add or create new input or text area to dom <br>
+                3. Initialize place holder again -- $('input, textarea').placeholder();
+            </p>
+            <br><br>
+            <h4>Live example:-</h4>
+            <br>
+            <div class="container">
+            <form id="form_coupons" name="form_coupons">
+                <div class="form-controls">
+                    <div class="code-box">
+                        <input type="password" placeholder="Password filed">
+                    </div>
+                    <div class="code-box">
+                        <input type="text" name="coupon_code[0]" id="coupon_code_0" class="coupon_codes" placeholder="This is static filed" maxlength="14" />
+                    </div>
+                </div>
+                <div class="code-add">
+                    <div class="code-wrap">
+                        <div class="add-code">
+                            <a href="javascript:;" class="add-new-code">Add more input </a>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/demo.js"></script>
+</body>
+</html>
