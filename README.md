@@ -1,6 +1,6 @@
 Placeholder for IE 9 and below browsers.
 
-This project is cloned from [petkaantonov](https://github.com/petkaantonov/jQuery-placeholder)
+This project is cloned from (https://github.com/petkaantonov/jQuery-placeholder)
 
 Usage
 -----
