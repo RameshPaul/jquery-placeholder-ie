@@ -1,7 +1,6 @@
-Placeholder plugin for jQuery. The placeholder doesn't use `.value` or `z-index` hacks. It also gives you a chance to style
-the placeholder differently when the user has the input focused but hasn't yet typed anything, even CSS-transition animations are possible.
+Placeholder for IE 9 and below browsers.
 
-Markup/Data-API supported.
+This project is cloned from [petkaantonov](https://github.com/petkaantonov/jQuery-placeholder)
 
 Usage
 -----
@@ -66,19 +65,4 @@ The plugin will automatically disable native placeholder.
 **Note:** dynamically created elements need to be called manually with javascript. You may also call `$.fn.placeholder.refresh()` at any point to instantiate any
 uninitialized `data-placeholder` inputs. It is automatically called once on DOM ready event which makes the data API work.
 
-See [the demo page](http://petkaantonov.github.io/jQuery-placeholder/demo.html) for a better overview
 
-Building
-----------
-
-Building requires [Closure Compiler](http://dl.google.com/closure-compiler/compiler-latest.zip) to be placed
-one directory up from the project in `closure_compiler` directory.
-
-The setting is in `Gruntfile.js`, expressed as `closurePath: '../closure_compiler'`
-
-Clone or download the repository, and while in the project root, run:
-
-    npm install
-    grunt
-    
-Builds will appear in the `/js` folder. The source code cannot be ran directly without building.
